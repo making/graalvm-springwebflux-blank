@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>am.ik.archetype</groupId>
-    <artifactId>graalvm-springmvc-blank</artifactId>
-    <version>0.1.2-SNAPSHOT</version>
+    <artifactId>graalvm-springwebflux-blank</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>graalvm-springmvc-blank</name>
+    <name>graalvm-springwebflux-blank</name>
     <description>Blank project for GraalVM + Spring MVC</description>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -29,11 +29,11 @@
         </license><!-- DELETE THIS LINE -->
     </licenses><!-- DELETE THIS LINE -->
     <scm><!-- DELETE THIS LINE -->
-        <url>https://github.com/making/graalvm-springmvc-blank</url><!-- DELETE THIS LINE -->
-        <connection>scm:git:git@github.com:making/graalvm-springmvc-blank.git</connection><!-- DELETE THIS LINE -->
-        <developerConnection>scm:git:git@github.com:making/graalvm-springmvc-blank.git</developerConnection><!-- DELETE THIS LINE -->
+        <url>https://github.com/making/graalvm-springwebflux-blank</url><!-- DELETE THIS LINE -->
+        <connection>scm:git:git@github.com:making/graalvm-springwebflux-blank.git</connection><!-- DELETE THIS LINE -->
+        <developerConnection>scm:git:git@github.com:making/graalvm-springwebflux-blank.git</developerConnection><!-- DELETE THIS LINE -->
     </scm><!-- DELETE THIS LINE -->
-    <url>https://github.com/making/graalvm-springmvc-blank</url><!-- DELETE THIS LINE -->
+    <url>https://github.com/making/graalvm-springwebflux-blank</url><!-- DELETE THIS LINE -->
     <developers><!-- DELETE THIS LINE -->
         <developer><!-- DELETE THIS LINE -->
             <id>making</id><!-- DELETE THIS LINE -->
@@ -56,7 +56,7 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
@@ -76,11 +76,6 @@
                     <artifactId>junit</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webflux</artifactId>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>io.projectreactor</groupId>

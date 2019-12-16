@@ -26,19 +26,19 @@ resources:
   - name: repo-master
     type: git
     source:
-      uri: git@github.com:making/graalvm-springmvc-blank.git
+      uri: git@github.com:making/graalvm-springwebflux-blank.git
       branch: master
       private_key: ((github-private-key))
   - name: repo-develop
     type: git
     source:
-      uri: git@github.com:making/graalvm-springmvc-blank.git
+      uri: git@github.com:making/graalvm-springwebflux-blank.git
       branch: develop
       private_key: ((github-private-key))
   - name: repo-version
     type: semver
     source:
-      uri: git@github.com:making/graalvm-springmvc-blank.git
+      uri: git@github.com:making/graalvm-springwebflux-blank.git
       branch: version
       private_key: ((github-private-key))
       file: version
@@ -120,7 +120,7 @@ jobs:
                 rm -rf ~/.m2
                 ln -fs $(pwd)/m2 ~/.m2
                 ./mvnw clean package -Pgraal -DskipTests
-                ./target/classes/graalvm-springmvc-blank* --spring.main.web-application-type=none
+                ./target/classes/graalvm-springwebflux-blank* --spring.main.web-application-type=none
         on_failure:
           put: slack-alert
           params:

@@ -7,8 +7,8 @@ Maven archetype to create a pre-configured maven project for a Spring MVC + Graa
 ```
 mvn archetype:generate\
  -DarchetypeGroupId=am.ik.archetype\
- -DarchetypeArtifactId=graalvm-springmvc-blank-archetype\
- -DarchetypeVersion=0.1.1
+ -DarchetypeArtifactId=graalvm-springwebflux-blank-archetype\
+ -DarchetypeVersion=0.1.0
 ```
 
 Example
@@ -16,10 +16,10 @@ Example
 ```
 mvn archetype:generate\
  -DarchetypeGroupId=am.ik.archetype\
- -DarchetypeArtifactId=graalvm-springmvc-blank-archetype\
+ -DarchetypeArtifactId=graalvm-springwebflux-blank-archetype\
  -DarchetypeVersion=0.1.1\
  -DgroupId=com.example\
- -DartifactId=demo-tomcat\
+ -DartifactId=demo-netty\
  -Dversion=1.0.0-SNAPSHOT\
  -B
 ```
@@ -39,10 +39,10 @@ mvn archetype:generate\
 > ```
 
 ```
-cd demo-tomcat
+cd demo-netty
 chmod +x mvnw*
 ./mvnw clean package -Pgraal
-./target/classes/demo-tomcat-osx-x86_64
+./target/classes/demo-netty-osx-x86_64
 ```
 
 The following log will be output.
